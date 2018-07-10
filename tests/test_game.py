@@ -1,5 +1,6 @@
 import unittest
 import string
+import requests
 from game import Game
 
 class TestGame(unittest.TestCase):
@@ -29,3 +30,5 @@ class TestGame(unittest.TestCase):
         new_game = Game()
         new_game.grid = list('KWIENFUQW') # Force the grid to a test case:
         self.assertIs(new_game.is_valid('FEUN'), False)
+
+
